@@ -1,0 +1,67 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+    font-family: 'Borel', cursive;
+}
+
+.heading {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.heading img {
+    margin-top: -20px;
+    width: 30%;
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.details-anime {
+    text-align: justify;
+}
+
+.details-anime p {
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+}
+
+.details-anime img {
+    width: 220px;
+    height: 120px;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+.one h3 {
+    text-align: right;
+}
+
+.one p {
+    text-align: right;
+    margin-left: 75px;
+}
+
+.one img {
+    margin-left: 0px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer {
+    text-align: center;
+}
