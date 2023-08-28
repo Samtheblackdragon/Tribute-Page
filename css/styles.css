@@ -2,6 +2,7 @@ body {
     background-image: linear-gradient(to right bottom, #351732, #341237, #320e3c, #2e0b43, #26094a, #270b4d, #290e4f, #2a1052, #361751, #3f1f50, #46274f, #4c2f4f);
     color: aliceblue;
     font-family: 'Kanit', sans-serif;
+    background-attachment: fixed;
 }
 
 #main {
@@ -49,18 +50,17 @@ figure #image {
 }
 
 #tribute-info {
-    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#tribute-info h2{
+#tribute-info h2 {
     font-size: 2.5em;
 }
 
-.introduction{
+.introduction {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -68,13 +68,60 @@ figure #image {
     text-align: center;
 }
 
-hr {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.other-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.other-info article {
+    width: 70%;
+    display: flex;
+    gap: 5em;
+    margin-bottom: 3em;
+}
+
+.other-info .lef {
+    flex-direction: row-reverse;
+}
+
+article .info-img {
+    width: 50%;
+}
+
+.info {
+    width: 70%;
+}
+
+.info-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 footer {
     text-align: center;
+}
+
+@media (width <=800px) {
+    #title h1 {
+        font-size: 2em;
+    }
+
+    figure #image {
+        width: 100%;
+        object-fit: cover;
+        display: inline;
+    }
+
+    #tribute-info h2 {
+        font-size: 1.7em;
+    }
+
+    .introduction {
+        width: 100%;
+    }
 }
