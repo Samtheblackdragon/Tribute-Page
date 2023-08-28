@@ -1,3 +1,12 @@
+<!-- DOCUMENTATION: 
+[] You should see an a element with a corresponding id="tribute-link", which links to an outside site, that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab
+
+[] Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size
+
+[] Your img element should be centered within its parent element
+
+[] Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,26 +24,42 @@
 </head>
 
 <body>
-    <main>
-        <section>
-            <div class="heading">
+    <!-- [x] Your tribute page should have a main element with a corresponding id of main, which contains all other elements -->
+    <main id="main">
+        <section class="heading">
+            <!-- [x] You should see an element with an id of title, which contains a string (i.e. text), that describes the subject of the tribute [] page (e.g. "Dr. Norman Borlaug") -->
+            <div id="title">
                 <h1>Anime Tribute Page</h1>
-                <img src="images/Anime.png" alt="Asta, Luffy, Naruto and Tanjiro image">
             </div>
         </section>
+        <section class="head-img">
+            <!-- [x] You should see either a figure or a div element with an id of img-div -->
+            <figure>
+                <!-- [x] Within the #img-div element, you should see an img element with a corresponding id="image" -->
+                <img src="images/Anime.png" alt="Compilation of Anime Images" id="image">
+                <!-- [x] Within the #img-div element, you should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in #img-div -->
+                <figcaption id="img-caption">Anime characters</figcaption>
+            </figure>
+        </section>
         <section>
-            <div class="content">
-                <h2>Introduction</h2>
-                <p>In the realm of imagination and creativity, a vibrant world known as anime comes to life. It's a
-                    realm where reality bends, emotions intensify, and stories weave intricate tapestries that capture
-                    our hearts. From the adrenaline-pumping battles of "Black Clover" to the boundless adventures of
-                    "One Piece," from the hilarious antics of "One Punch Man" to the fantastical escapades of isekai
-                    anime, this art form has etched its mark deep within our souls.</p>
-                <p>Anime, with its intricate narratives, vibrant characters, and breathtaking animation, is more than
-                    mere entertainment—it's a mirror that reflects our emotions, struggles, and aspirations. It
-                    encapsulates the human experience in ways that resonate across cultures and generations. Through
-                    every exhilarating fight, tearful goodbye, and triumphant victory, anime captures the essence of
-                    what it means to be human.</p>
+            <!-- [x] You should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page -->
+            <div id="tribute-info">
+                <div class="introduction">
+                    <h2>Introduction</h2>
+                    <p>In the realm of imagination and creativity, a vibrant world known as anime comes to life. It's a
+                        realm where reality bends, emotions intensify, and stories weave intricate tapestries that
+                        capture
+                        our hearts. From the adrenaline-pumping battles of "Black Clover" to the boundless adventures of
+                        "One Piece," from the hilarious antics of "One Punch Man" to the fantastical escapades of isekai
+                        anime, this art form has etched its mark deep within our souls.</p>
+                    <p>Anime, with its intricate narratives, vibrant characters, and breathtaking animation, is more
+                        than
+                        mere entertainment—it's a mirror that reflects our emotions, struggles, and aspirations. It
+                        encapsulates the human experience in ways that resonate across cultures and generations. Through
+                        every exhilarating fight, tearful goodbye, and triumphant victory, anime captures the essence of
+                        what it means to be human.</p>
+                </div>
+
                 <h2>Types of anime</h2>
                 <article class="details-anime">
                     <h3>One Punch Man</h3>

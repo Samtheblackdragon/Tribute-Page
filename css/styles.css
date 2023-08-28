@@ -1,58 +1,71 @@
 body {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-image: linear-gradient(to right bottom, #351732, #341237, #320e3c, #2e0b43, #26094a, #270b4d, #290e4f, #2a1052, #361751, #3f1f50, #46274f, #4c2f4f);
     color: aliceblue;
     font-family: 'Kanit', sans-serif;
 }
 
-h1 {
-    font-family: 'Borel', cursive;
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .heading {
-    text-align: center;
-    font-size: 25px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-.heading img {
-    margin-top: -20px;
-    width: 30%;
+#title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.content {
+#title h1 {
+    font-family: 'Borel', cursive;
+    font-size: 3em;
+}
+
+.head-img {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure #image {
+    width: 40%;
+    object-fit: cover;
+    display: inline;
+}
+
+#img-caption {
     width: 50%;
-    margin: 0 auto;
     text-align: center;
 }
 
-.details-anime {
-    text-align: justify;
+#tribute-info {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.details-anime p {
-    display: inline-block;
-    text-align: left;
-    width: 60%;
+#tribute-info h2{
+    font-size: 2.5em;
 }
 
-.details-anime img {
-    width: 220px;
-    height: 120px;
-    border-radius: 20px;
-    margin-left: 70px;
-}
-
-.one h3 {
-    text-align: right;
-}
-
-.one p {
-    text-align: right;
-    margin-left: 75px;
-}
-
-.one img {
-    margin-left: 0px;
+.introduction{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 hr {
