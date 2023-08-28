@@ -33,15 +33,18 @@ body {
 }
 
 figure {
+    margin-top: -50px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-figure #image {
-    width: 40%;
+#image {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
-    display: inline;
+    display: block;
 }
 
 #img-caption {
@@ -102,19 +105,22 @@ article .info-img {
 }
 
 
+#tribute-link {
+    text-align: center;
+}
+
+#tribute-link a {
+    color: black;
+}
+
 footer {
     text-align: center;
 }
 
-@media (width <=800px) {
+@media (width <=1000px) {
     #title h1 {
         font-size: 2em;
-    }
-
-    figure #image {
-        width: 100%;
-        object-fit: cover;
-        display: inline;
+        text-align: center;
     }
 
     #tribute-info h2 {
@@ -123,5 +129,28 @@ footer {
 
     .introduction {
         width: 100%;
+    }
+
+    .other-info article {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    article .info-img {
+        width: 70%;
+        margin: auto;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+
+}
+
+@media (width <=700px) {
+    figure #image {
+        min-width: 100%;
     }
 }
